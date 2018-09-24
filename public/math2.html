@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" src="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form class="form-group">
+            <label for="operations">Operations</label>
+            <div id="operations" class="list-group">
+                <label for="addition" value="addition">Addition</label>
+                <input id="addition" class="list-group-item" name="operation" type="radio">
+                <label for="subtraction" value="subtraction">Subtraction</label>
+                <input id="subtraction" class="list-group-item" name="operation" type="radio">
+                <label for="multiplication" value="multiplication">Multiplication</label>
+                <input id="multiplication" class="list-group-item" name="operation" type="radio">
+                <label for="division" value="division">Division</label>
+                <input id="division" class="list-group-item" name="operation" type="radio">
+            </div>
+            <label for="inputs">Inputs</label>
+            <div id="inputs" class="list-group">
+                <input id="x" type="number">
+                <input id="y" type="number">
+                <input id="go" type="button" value="Go" class="btn-primary" onclick="calculate(event)">
+            </div>
+            <div id="answer"></div>
+        </form>
+        <script src=./math2.js></script>
+    </body>
+</html>

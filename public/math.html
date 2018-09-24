@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Help</title>
+        <link rel="stylesheet" href="./math.css">
+    <body>
+        <form id="calculator">
+            <section class="type">
+                <legend>Operation</legend>
+                    <input for="addition" name="type" type="radio" id="add" value="addition" checked>
+                    <label for="addition">Addition</label>
+                    <input for="subtraction" name="type" type="radio" id="sub" value="subtraction">
+                    <label for="subtraction">Subtraction</label>
+                    <input for="multiplication" name="type" type="radio" id="mul" value="multiplication">
+                    <label for="multiplication">Multiplication</label>
+                    <input for="division" name="type" type="radio" id="div" value="division"
+                    <label for="division">Division</label>
+            </section>
+            <section class="inputs">
+                <legend>Inputs</legend>
+                    <input type="text" id="input1" name="input1" placeholder="example: 1">
+                    <input type="text" id="input2" name="input2" placeholder="example: 2">
+            </section>
+            <section class="goButton">
+                <input type="button" id="go" value="Go" onclick="calculate(event)">
+            </section>
+            <div id="answer"></div>
+        </form>
+        <script src="./math.js"></script>
+    </body>    
+</html>

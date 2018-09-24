@@ -10,14 +10,20 @@
         <hr>
     </header>
     <body>
+        <form class="nameChange" onsubmit="changeName(event)">
+            <label for="name-changer">Enter name here:</label>
+            <input type="text" name="Name Bar" id="nameBar" placeholder="Name">
+            <button type="submit">Change</button>
+        </form>
         <main class="nametag">
             <div class="beginning">
                 <h1 class="hello">Hello</h1>
                 <p class="name">my name is</p>
             </div>
             <div class="bottom">
-                <h1 class="conner">Conner</h1>
+                <div id="nameChanger" class="conner">Conner</div>
             </div>
         </main>
+        <script src="./nametag.js"></script>
     </body>
 </html>

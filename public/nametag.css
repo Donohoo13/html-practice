@@ -19,6 +19,7 @@
     font-size: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: -10px;
+    white-space: nowrap;
 }
 .beginning {
     padding-bottom: 10px;
